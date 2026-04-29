@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+.terminal{
+    background:#08081c;
+    border:0.5px solid #1a1640;
+    border-radius:12px;
+    padding:20px 28px;
+    padding-bottom: 40px;
+    width: min(100%, 590px);
+    min-width: 280px;
+    max-width: 100%;
+    margin-top: 10px;
+    flex:1;
+    position:relative;
+    overflow:hidden;
+    font-family: jetbrains mono, monospace;
+    display: flex;
+    flex-direction: column;
+    height: 280px;
+    min-height: 260px;
+  max-height: 260px;
+  
+ 
+ 
+
+}
+
+.terminal-header{
+    flex-shrink: 0;
+}
+
+.terminal::before{
+    content:'';
+    position:absolute;
+    top:0;left:0;
+    right:0;
+    height:1px;
+    background:linear-gradient(90deg,transparent,#534AB7 40%,#7F77DD 60%,transparent);
+}
+
+.terminal-body{
+     flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  scrollbar-width: none;
+}
+.terminal-body::-webkit-scrollbar {
+  display: none; 
+}
+
+.tbar{
+    display:flex;
+    align-items:center;
+    gap:7px;
+    margin-bottom:16px;
+    font-size: 18px;
+}
+.tdot{
+    width:9px;
+    height:9px;
+    border-radius:50%;}
+.title{
+    font-size:16px;
+    color:#3a2a6e;
+    margin-left:8px;
+    letter-spacing:0.06em;}
+
+.tr{
+    font-size:15px;
+    line-height:1.5;
+    display:flex;
+    gap:5px;
+    align-items:baseline;
+}
+.tp{
+    color:#534AB7;
+    flex-shrink:0;
+    font-weight:500;
+}
+.tc{
+    color:#e0d8ff;
+}
+.to{
+    color:#7a7a9a;
+    padding-left:0;
+}
+.os{
+    color:#AFA9EC;
+}
+.cursor{
+    display:inline-block;
+    width:7px;
+    height:12px;
+    background:#7F77DD;
+    vertical-align:middle;
+    animation:blink 1s step-end infinite;
+    margin-left:1px;
+}
+
+.command-input{
+    color: white;
+    background: transparent;
+    border: none;
+  outline: none;
+   color: #e0d8ff;
+    font-family: 'JetBrains Mono', monospace;
+  font-size: 15px;
+  width: 100%;
+  caret-color: #7F77DD;
+}
+@keyframes 
+ blink{0%,100%{opacity:1}50%{opacity:0}}
+
+
+@media (max-width: 640px) {
+  .terminal {
+    width: 100%;
+    min-width: auto;
+    padding: 16px 18px;
+    margin-top: 32px;
+  }
+}

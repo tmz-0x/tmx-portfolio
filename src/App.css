@@ -1,0 +1,27 @@
+
+
+.page{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: row;
+  background: #06060f;
+}
+
+main {
+  margin-left: 76px;
+  width: calc(100% - 76px);
+}
+
+@media (max-width: 980px) {
+  main {
+    margin-left: 64px;
+    width: calc(100% - 64px);
+  }
+}
+
+@media (max-width: 640px) {
+  main {
+    margin-left: 56px;
+    width: calc(100% - 56px);
+  }
+}

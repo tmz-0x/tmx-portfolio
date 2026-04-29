@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+*{box-sizing:border-box;margin:0;padding:0;}
+.skills-page{background:#06060f;min-height:100vh;padding:60px 80px;font-family:'JetBrains Mono',monospace;color:#AFA9EC;}
+
+.page-label{font-size:11px;color:#534AB7;letter-spacing:0.14em;display:flex;align-items:center;gap:12px;margin-bottom:48px;}
+.page-label::before{content:'';width:28px;height:1px;background:#534AB7;}
+.page-label::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,#14123a,transparent);}
+
+.section-title{font-size:18px;font-weight:500;color:#e0d8ff;letter-spacing:-0.02em;margin-bottom:24px;}
+.section-tag{font-size:10px;color:#534AB7;letter-spacing:0.12em;margin-bottom:8px;}
+.divider{height:0.5px;background:linear-gradient(90deg,#1a1640,transparent);margin:48px 0;}
+
+/* ── Current Skills ── */
+.skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-bottom:0;}
+.skill-category{background:#0d0d1a;border:0.5px solid #1a1640;border-radius:12px;padding:24px;position:relative;overflow:hidden;}
+.skill-category::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,#2d1f5e,transparent);}
+.cat-title{font-size:12px;font-weight:500;color:#AFA9EC;letter-spacing:0.08em;margin-bottom:16px;display:flex;align-items:center;gap:8px;}
+.cat-title::before{content:'';width:6px;height:6px;border-radius:50%;background:#534AB7;flex-shrink:0;}
+.skill-list{display:flex;flex-direction:column;gap:10px;}
+.skill-item{display:flex;flex-direction:column;gap:6px;}
+.skill-name{font-size:12px;color:#7a7a9a;display:flex;justify-content:space-between;}
+.skill-name span{color:#534AB7;font-size:11px;}
+.skill-bar{height:3px;background:#1a1640;border-radius:2px;overflow:hidden;}
+.skill-fill{height:100%;border-radius:2px;background:linear-gradient(90deg,#534AB7,#7F77DD);}
+
+/* ── Tools ── */
+.tools-grid{display:flex;flex-wrap:wrap;gap:10px;}
+.tool-tag{background:#0d0d1a;border:0.5px solid #1a1640;border-radius:8px;padding:8px 14px;font-size:12px;color:#7a7a9a;display:flex;align-items:center;gap:6px;transition:border-color 0.2s;}
+.tool-tag:hover{border-color:#534AB7;color:#AFA9EC;}
+.tool-dot{width:5px;height:5px;border-radius:50%;background:#534AB7;flex-shrink:0;}
+
+/* ── Learning ── */
+.learning-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
+.learn-card{background:#0d0d1a;border:0.5px solid #1a1640;border-radius:10px;padding:16px 20px;position:relative;overflow:hidden;}
+.learn-card::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,#1a2a1a,transparent);}
+.learn-badge{font-size:9px;color:#1D9E75;letter-spacing:0.1em;margin-bottom:8px;display:flex;align-items:center;gap:5px;}
+.learn-badge::before{content:'';width:5px;height:5px;border-radius:50%;background:#1D9E75;}
+.learn-title{font-size:13px;color:#e0d8ff;font-weight:500;margin-bottom:4px;}
+.learn-desc{font-size:11px;color:#7a7a9a;line-height:1.7;}
+.learn-progress{margin-top:12px;height:2px;background:#1a1640;border-radius:2px;overflow:hidden;}
+.learn-fill{height:100%;border-radius:2px;background:linear-gradient(90deg,#1D9E75,#5DCAA5);}
