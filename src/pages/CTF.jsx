@@ -54,7 +54,7 @@ export default function CTF() {
         ))}
       </div>
 
-      {/* card grid */}
+      
       <div className="ctf-grid">
         {filtered.map((ctf) => (
           <div className="ctf-card" key={ctf.id}>
