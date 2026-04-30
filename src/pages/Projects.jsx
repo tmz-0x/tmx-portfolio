@@ -69,6 +69,10 @@ export default function Projects() {
   ];
 
   return (
+    
+<div class="tmx-wrap">
+    <div class="section-label">TmxLand &nbsp;·&nbsp; projects</div>
+
     <div className="projects-grid">
       {projects.map((project) => (
         <div key={project.id} className="pcard">
@@ -95,6 +99,7 @@ export default function Projects() {
           </div>
         </div>
       ))}
+    </div>
     </div>
   )
 }
