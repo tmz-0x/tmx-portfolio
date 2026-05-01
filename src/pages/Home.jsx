@@ -3,6 +3,7 @@ import GlitchName from '../Component/GlitchName'
 import Statusbar from '../Component/StatusBar';
 import { useEffect,useState} from 'react';
 import Aboutme from '../Component/aboutme';
+import MirrorCube from '../Component/MirrorCube';
 
 export default function Home() {
     const [ShowAboutme,setShowAboutme] = useState(false);
@@ -23,16 +24,17 @@ export default function Home() {
   
   return (
     <>
-    <section className='main'>
-      <div className='landing-page'>
+    <section className='main' style={{ position: 'relative', minHeight: '100vh', overflow: 'hidden' }}>
+      <MirrorCube />
+      <div className='landing-page' style={{ position: 'relative', zIndex: 1 }}>
    <div className="Welcome-bar">WELCOME TO &nbsp;·&nbsp;  TMX-LAND</div>
-      <p className='intro'>I'm a</p>
+      <p className='intro'>I'm </p>
       <div className='Main-name'><GlitchName  name="Thisal Nanayakkara" /></div>
 
       <p className='headline'>Penetration Tester  & Security Researcher  </p>
       <p className='description'>I am doing security testing and bug bounty hunter. The new world seeker</p>
           <div className='social-links'>
-       <a href="" alt="linkedin"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+       <a href="https://www.linkedin.com/in/thisal000" alt="linkedin"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
   <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
 </svg></a>
         <a href="" alt="Github"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
@@ -44,7 +46,10 @@ export default function Home() {
       
 
       <button className="aboutme"  onClick={handleShowAboutMe}>About me</button>
-       
+     
+        
+        
+        
    </div>
     <div className={`aboutme_container ${ShowAboutme ? 'visible':''}`}>
           <Aboutme onHomeClick={handleHomeClick}/>

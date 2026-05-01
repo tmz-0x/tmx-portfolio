@@ -29,8 +29,12 @@ export default function Terminal() {
           description: 'I am currently focused on expanding my knowledge in cloud security and container security. I am also interested in exploring the field of IoT security and mobile application security.'
         },
         {
+          command: 'whoami',
+          description: 'Thisal Nanayakkara'
+        },
+        {
                     command: '.ls',
-                    description: '/future.sh <br/> /F#ck_society.txt '
+                    description: './future.sh <br/> /F#ck_society.txt '
         },
         
       
@@ -90,9 +94,8 @@ export default function Terminal() {
         </div>
     </div>
       <div className="terminal-body">
-          <div className='tr'><span className="tp">root@tmx:~$</span><span className="ts">Whoami</span></div>
-          <div className="tr">Thisal Nanayakkara</div>
-
+          
+          
            
           { 
             history.map((item,i) =>(
