@@ -1,0 +1,262 @@
+/* ─────────────────────────────── */
+/*   GLOBAL MOBILE FIX (ALL PAGES) */
+/* ─────────────────────────────── */
+
+@media (max-width: 768px) {
+
+  html, body, #root {
+    height: auto !important;
+    min-height: 100vh !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+  }
+
+  .page {
+    height: auto !important;
+    min-height: 100vh !important;
+    overflow: visible !important;
+  }
+
+  main {
+    height: auto !important;
+    min-height: auto !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+  }
+
+  .about,
+  .skills-page,
+  .ctf-page,
+  .projects-page,
+  .landing-page {
+    min-height: auto !important;
+    height: auto !important;
+  }
+}
+
+/* ─────────────────────────────── */
+/*   SIDEBAR + NAV MOBILE FIX      */
+/* ─────────────────────────────── */
+
+@media (max-width: 900px) {
+  .sidebar-container {
+    width: 64px;
+    padding: 20px 14px;
+  }
+
+  .sidebar-container nav {
+    gap: 32px;
+  }
+
+  .nav-pill svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  main {
+    margin-left: 64px !important;
+    width: calc(100% - 64px) !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .sidebar-container {
+    width: 56px;
+    padding: 16px 10px;
+  }
+
+  .sidebar-container nav {
+    gap: 26px;
+  }
+
+  .nav-pill svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .tooltip {
+    display: none;
+  }
+
+  main {
+    margin-left: 56px !important;
+    width: calc(100% - 56px) !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar-container {
+    width: 50px;
+    padding: 14px 8px;
+  }
+
+  .nav-pill svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  main {
+    margin-left: 50px !important;
+    width: calc(100% - 50px) !important;
+  }
+}
+
+/* ─────────────────────────────── */
+/*   LANDING PAGE MOBILE FIX       */
+/* ─────────────────────────────── */
+
+@media (max-width: 768px) {
+  .headline,
+  .Main-name,
+  .description {
+    transform: translateY(0) !important;
+    text-align: center;
+    padding: 12px;
+  }
+
+  .landing-page {
+    align-items: center;
+  }
+
+  .social-links {
+    margin-top: 0;
+    justify-content: center;
+  }
+}
+
+/* ─────────────────────────────── */
+/*   ABOUT ME PAGE MOBILE FIX      */
+/* ─────────────────────────────── */
+
+@media (max-width: 900px) {
+   .aboutme_container {
+    position: static !important;     /* remove fixed behavior */
+    top: auto !important;
+    left: 0 !important;
+    width: 100% !important;
+
+    /* collapsible behavior */
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.45s ease, opacity 0.35s ease;
+    margin-top: 20px;
+  }
+
+  .aboutme_container.visible {
+    max-height: 3000px;              /* enough to show full content */
+    opacity: 1;
+  }
+}
+
+@media (max-width: 640px) {
+  .aboutme_container {
+    left: 56px !important;
+    width: calc(100% - 56px) !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutme_container {
+    left: 50px !important;
+    width: calc(100% - 50px) !important;
+  }
+}
+
+/* ─────────────────────────────── */
+/*   PROJECTS PAGE MOBILE FIX      */
+/* ─────────────────────────────── */
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ─────────────────────────────── */
+/*   SKILLS PAGE MOBILE FIX        */
+/* ─────────────────────────────── */
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .learning-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .learning-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ─────────────────────────────── */
+/*   CTF PAGE MOBILE FIX           */
+/* ─────────────────────────────── */
+
+@media (max-width: 768px) {
+  .ctf-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .ctf-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ─────────────────────────────── */
+/*   TERMINAL MOBILE FIX           */
+/* ─────────────────────────────── */
+
+@media (max-width: 768px) {
+  .terminal {
+    height: 240px;
+    padding: 14px 16px;
+  }
+
+  .tr {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .terminal {
+    height: 200px;
+  }
+}
+
+/* MOBILE VERSION OF THE WEBGL MONOLITH */
+@media (max-width: 768px) {
+  canvas.truth-mirror {
+    position: absolute !important;
+    right: 0 !important;
+    left: 0 !important;
+    margin: 0 auto !important;
+
+    width: 100vw !important;
+    height: 60vh !important;
+
+    transform: translateY(0) !important;
+    z-index: -1 !important;
+    opacity: 0.45; /* softer on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  canvas.truth-mirror {
+    height: 50vh !important;
+    opacity: 0.35;
+  }
+}
+

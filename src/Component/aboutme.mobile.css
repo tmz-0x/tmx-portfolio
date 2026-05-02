@@ -1,0 +1,118 @@
+/* ──────────────────────────────── */
+/*   MOBILE OVERRIDES FOR ABOUT ME  */
+/*   No existing elements changed    */
+/* ──────────────────────────────── */
+
+@media (max-width: 900px) {
+  .about {
+    padding: 40px 32px;
+  }
+
+  .bio-section {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .bio-right {
+    padding-top: 0;
+  }
+
+  .bio-name {
+    font-size: 26px;
+  }
+
+  .bio-text {
+    font-size: 12px;
+    line-height: 1.7;
+  }
+
+  .tl-item {
+    grid-template-columns: 80px 1fr;
+    gap: 16px;
+  }
+
+  .tl-item::before {
+    left: 68px;
+  }
+
+  .what-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .about {
+    padding: 24px 18px;
+  }
+
+  .page-label {
+    margin-bottom: 32px;
+  }
+
+  .bio-name {
+    font-size: 22px;
+  }
+
+  .bio-section {
+    gap: 24px;
+  }
+
+  .bio-stat {
+    padding: 14px 16px;
+  }
+
+  .tl-item {
+    grid-template-columns: 60px 1fr;
+    gap: 12px;
+  }
+
+  .tl-item::before {
+    left: 52px;
+  }
+
+  .tl-title {
+    font-size: 13px;
+  }
+
+  .tl-desc {
+    font-size: 11px;
+  }
+
+  .what-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .what-card {
+    padding: 18px;
+  }
+
+  .what-title {
+    font-size: 13px;
+  }
+
+  .what-desc {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 420px) {
+  .bio-name {
+    font-size: 20px;
+  }
+
+  .bio-text {
+    font-size: 11px;
+  }
+
+  .tl-item {
+    grid-template-columns: 50px 1fr;
+  }
+
+  .tl-item::before {
+    left: 44px;
+  }
+
+  .what-card {
+    padding: 16px;
+  }
+}

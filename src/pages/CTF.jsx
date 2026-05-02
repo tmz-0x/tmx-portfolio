@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import './ctf.css'
+import './ctf.mobile.css'
+
 const ctfs = [
   
   {

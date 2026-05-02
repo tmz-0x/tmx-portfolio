@@ -1,4 +1,5 @@
 import './skills.css'
+import './skills.mobile.css'
 
 export default function Skills() {
   const ctfplayed = [

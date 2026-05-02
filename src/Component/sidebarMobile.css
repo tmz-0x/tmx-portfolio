@@ -1,0 +1,94 @@
+/* ─────────────────────────────── */
+/*   MOBILE OVERRIDES FOR SIDEBAR  */
+/*   No element changes            */
+/* ─────────────────────────────── */
+
+@media (max-width: 900px) {
+  .sidebar-container {
+    width: 64px;
+    padding: 20px 14px;
+  }
+
+  .sidebar-container nav {
+    gap: 32px;
+  }
+
+  .nav-pill svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .tooltip {
+    left: 64px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 640px) {
+  .sidebar-container {
+    width: 56px;
+    padding: 16px 10px;
+  }
+
+  .sidebar-container nav {
+    gap: 26px;
+  }
+
+  .nav-pill svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .nav-pill:hover {
+    padding: 8px 14px;
+  }
+
+  .nav-pill .active {
+    padding: 6px;
+  }
+
+  .tooltip {
+    left: 56px;
+    padding: 8px;
+    font-size: 10px;
+  }
+  
+}
+
+@media (max-width: 480px) {
+  .sidebar-container {
+    width: 50px;
+    padding: 14px 8px;
+  }
+
+  .sidebar-container nav {
+    gap: 22px;
+  }
+
+  .nav-pill svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .tooltip {
+    display: none; /* tooltips don't work well on touch screens */
+  }
+    html, body, #root {
+    height: auto !important;
+    min-height: 100vh !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+  }
+
+  .page {
+    height: auto !important;
+    min-height: 100vh !important;
+  }
+
+  main {
+    height: auto !important;
+    min-height: auto !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+  }
+}

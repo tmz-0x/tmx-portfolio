@@ -1,0 +1,58 @@
+/* MOBILE OVERRIDES FOR index.css */
+
+@media (max-width: 768px) {
+  .Welcome-bar {
+    margin-left: 0;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .headline {
+    transform: translateY(0);
+    font-size: 18px;
+    padding: 12px;
+  }
+
+  .Main-name {
+    transform: translateY(0);
+    font-size: 28px;
+    padding: 12px;
+  }
+
+  .description {
+    transform: translateY(0);
+    font-size: 12px;
+    padding: 12px;
+  }
+
+  .social-links {
+    margin-top: 0;
+    justify-content: center;
+    padding: 12px;
+  }
+
+  .landing-page {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar-container {
+    width: 52px;
+    padding: 12px;
+  }
+
+  main {
+    margin-left: 52px !important;
+    width: calc(100% - 52px) !important;
+  }
+
+  .headline {
+    font-size: 16px;
+  }
+
+  .Main-name {
+    font-size: 22px;
+  }
+}

@@ -138,7 +138,8 @@ export default function TruthMirrorMonolith() {
 
   return (
     <canvas 
-      ref={canvasRef} 
+      ref={canvasRef}
+      className="truth-mirror" 
       style={{ 
         position: 'fixed',
         right: '-20%', // Bleed off the edge for scale

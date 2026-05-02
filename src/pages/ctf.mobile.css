@@ -1,0 +1,25 @@
+/* MOBILE OVERRIDES FOR ctf.css */
+
+@media (max-width: 768px) {
+  .ctf-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .stats-bar {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ctf-page {
+    padding: 24px;
+  }
+
+  .ctf-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-v {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,21 @@
+/* MOBILE OVERRIDES FOR skills.css */
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .learning-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-page {
+    padding: 24px;
+  }
+
+  .learning-grid {
+    grid-template-columns: 1fr;
+  }
+}

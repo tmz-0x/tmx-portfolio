@@ -1,0 +1,12 @@
+/* MOBILE OVERRIDES FOR GlitchName.css */
+
+@media (max-width: 480px) {
+  .gname {
+    font-size: clamp(28px, 8vw, 42px);
+  }
+
+  .gname::before,
+  .gname::after {
+    font-size: clamp(28px, 8vw, 42px);
+  }
+}

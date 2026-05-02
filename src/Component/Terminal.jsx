@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './Terminal.css';
-
+import './terminal.mob.css'
 // Component to handle the typing effect for each output line
 const TypingEffect = ({ text, speed = 20, onComplete }) => {
   const [displayedText, setDisplayedText] = useState('');

@@ -1,4 +1,5 @@
 import './Projects.css'
+import './Projects.mobile.css'
 
 export default function Projects() {
   const projects = [

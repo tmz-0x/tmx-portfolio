@@ -4,6 +4,7 @@ import Skills from './pages/Skills.jsx'
 import CTF from './pages/CTF.jsx'
 import Sidebar from './Component/Sidebar.jsx'
 import './App.css'; 
+import './App.mobile.css';
 import { HashRouter, Routes, Route } from 'react-router-dom'
 
 function App() {

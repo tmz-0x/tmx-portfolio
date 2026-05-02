@@ -1,4 +1,5 @@
 import './GlitchName.css';
+import './glitchname.mobile.css'
 
 export default function GlitchName() {
 

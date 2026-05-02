@@ -1,0 +1,19 @@
+/* MOBILE OVERRIDES FOR Projects.css */
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    padding: 0 6px;
+  }
+
+  .pcard {
+    padding: 14px;
+  }
+}

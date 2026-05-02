@@ -1,4 +1,5 @@
 import './aboutme.css'
+import './aboutme.mobile.css'
 
 export default function Aboutme({ onHomeClick }) {
    const stats = [
