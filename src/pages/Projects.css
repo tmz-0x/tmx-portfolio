@@ -22,7 +22,6 @@
     background:linear-gradient(90deg,#14123a,transparent);
  }
 
-
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
